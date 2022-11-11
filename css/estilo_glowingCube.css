@@ -1,0 +1,105 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 12px;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: black;
+    position: relative;
+}
+
+.titulo{
+    width: 20rem;
+    height: 60rem;
+}
+
+.titulo .format_botao{
+    width: 20rem;
+    background-color: red;
+    color: white;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.titulo h1{
+    width: 20rem;
+    color: red;
+    margin-bottom: 1rem;
+}
+
+.cube{
+    position: absolute;
+    width: 20rem; /* 300px */
+    height: 20rem; /* 300px */
+    transform-style: preserve-3d;
+    transform: rotateX(-30deg);
+    animation: animate 4s linear infinite;
+}
+
+@keyframes animate{
+    0%
+    {
+    transform: rotateX(-30deg) rotateY(0deg);    
+    }
+    100%
+    {
+    transform: rotateX(-30deg) rotateY(360deg);    
+    }
+}
+
+.cube div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+}
+
+.cube div span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#151515,#00ec00);
+    transform: rotateY(calc(90deg * var(--i))) translateZ(10rem);
+    /* 300px / 2 = 150px */
+    /* 20rem / 2 = 10rem */
+}
+
+.top{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20rem; /* 300px */
+    height: 20rem; /* 300px */
+    background: #222;
+    transform: rotateX(90deg) translateZ(10rem); /* 150px */
+}
+
+.top::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20rem; /* 300px */
+    height: 20rem; /* 300px */
+    background: #0f0;
+    transform: translateZ(-25rem); /* -400px */
+    filter: blur(1.5rem);
+    box-shadow: 0 0 8rem rgba(0,255,0,0.2),  /* 120px */
+                0 0 13rem rgba(0,255,0,0.4), /* 200px */
+                0 0 19rem rgba(0,255,0,0.6), /* 300px */
+                0 0 25rem rgba(0,255,0,0.8), /* 400px */
+                0 0 32rem rgba(0,255,0,1);   /* 500px */
+}
