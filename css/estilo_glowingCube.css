@@ -18,8 +18,11 @@ body{
 }
 
 .titulo{
+    justify-content: center;
+    align-items: center;
     width: 20rem;
     height: 60rem;
+    position: absolute;
 }
 
 .titulo .format_botao{
