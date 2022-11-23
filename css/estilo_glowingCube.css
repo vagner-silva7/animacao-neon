@@ -20,13 +20,13 @@ body{
 .titulo{
     justify-content: center;
     align-items: center;
-    width: 20rem;
+    width: 25rem;
     height: 60rem;
     position: absolute;
 }
 
 .titulo .format_botao{
-    width: 20rem;
+    width: 25rem;
     background-color: red;
     color: white;
     padding: 1rem;
@@ -34,7 +34,7 @@ body{
 }
 
 .titulo h1{
-    width: 20rem;
+    width: 25rem;
     color: red;
     margin-bottom: 1rem;
 }
