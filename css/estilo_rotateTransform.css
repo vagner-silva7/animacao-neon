@@ -1,0 +1,247 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 12px;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: black;
+    position: relative;
+}
+
+.titulo{
+    justify-content: center;
+    align-items: center;
+    width: 25rem;
+    height: 60rem;
+    position: absolute;
+}
+
+.titulo .format_botao{
+    width: 25rem;
+    background-color: red;
+    color: white;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.titulo h1{
+    width: 25rem;
+    color: red;
+    margin-bottom: 1rem;
+}
+
+.container{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 50px;
+    text-align: center;
+}
+
+/* rotacionando em X */
+
+.x{
+    height: 50px;
+    width: 50px;
+    color: white;
+}
+
+.loadX{
+    height: 50px;
+    width: 50px;
+    font-size: 20px;
+    background: rgb(132, 11, 184);
+    font-weight: bolder;
+    color: white;
+    border-radius: 50%;
+    margin: 2px;
+    animation: animateX 15s alternate infinite;
+}
+
+@keyframes animateX{
+    0%{
+        transform: rotateX(0deg);
+    }
+    50%{
+        transform: rotateX(360deg);
+    }
+    100%{
+        transform: rotateX(0deg);
+    }
+
+}
+
+.loadX:nth-child(1){
+    animation-delay: 0.2s;
+}
+
+.loadX:nth-child(2){
+    animation-delay: 0.4s;
+}
+
+.loadX:nth-child(3){
+    animation-delay: 0.6s;
+}
+
+.loadX:nth-child(4){
+    animation-delay: 0.8s;
+}
+
+.loadX:nth-child(5){
+    animation-delay: 1s;
+}
+
+.loadX:nth-child(6){
+    animation-delay: 1.2s;
+}
+
+.loadX:nth-child(7){
+    animation-delay: 1.4s;
+}
+
+.loadX:nth-child(8){
+    animation-delay: 1.6s;
+}
+
+/* rotacionando em Y */
+
+.y{
+    height: 50px;
+    width: 50px;
+    color: white;
+}
+
+.loadY{
+   /*  margin-top: 400px; */
+    height: 50px;
+    width: 50px;
+    font-size: 20px;
+    background: rgb(204, 14, 131);
+    font-weight: bolder;
+    color: white;
+    border-radius: 50%;
+    margin: 2px;
+    animation: animateY 15s alternate infinite;
+}
+
+@keyframes animateY{
+    0%{
+        transform: rotateY(0deg);
+    }
+    50%{
+        transform: rotateY(360deg);
+    }
+    100%{
+        transform: rotateY(0deg);
+    }
+
+}
+
+.loadY:nth-child(9){
+    animation-delay: 0.2s;
+}
+
+.loadY:nth-child(10){
+    animation-delay: 0.4s;
+}
+
+.loadY:nth-child(11){
+    animation-delay: 0.6s;
+}
+
+.loadY:nth-child(12){
+    animation-delay: 0.8s;
+}
+
+.loadY:nth-child(13){
+    animation-delay: 1s;
+}
+
+.loadY:nth-child(14){
+    animation-delay: 1.2s;
+}
+
+.loadY:nth-child(15){
+    animation-delay: 1.4s;
+}
+
+.loadY:nth-child(16){
+    animation-delay: 1.6s;
+}
+
+/* rotacionando em Z */
+
+.z{
+    height: 50px;
+    width: 50px;
+    color: white;
+}
+
+.loadZ{
+    /* margin-top: 400px; */
+    height: 50px;
+    width: 50px;
+    font-size: 20px;
+    background: rgb(204, 122, 14);
+    font-weight: bolder;
+    color: white;
+    border-radius: 50%;
+    margin: 2px;
+    animation: animateZ 15s alternate infinite;
+}
+
+@keyframes animateZ{
+    0%{
+        transform: rotateZ(0deg);
+    }
+    50%{
+        transform: rotateZ(360deg);
+    }
+    100%{
+        transform: rotateZ(0deg);
+    }
+
+}
+
+.loadZ:nth-child(17){
+    animation-delay: 0.2s;
+}
+
+.loadZ:nth-child(18){
+    animation-delay: 0.4s;
+}
+
+.loadZ:nth-child(19){
+    animation-delay: 0.6s;
+}
+
+.loadZ:nth-child(20){
+    animation-delay: 0.8s;
+}
+
+.loadZ:nth-child(21){
+    animation-delay: 1s;
+}
+
+.loadZ:nth-child(22){
+    animation-delay: 1.2s;
+}
+
+.loadZ:nth-child(23){
+    animation-delay: 1.4s;
+}
+
+.loadZ:nth-child(24){
+    animation-delay: 1.6s;
+}
